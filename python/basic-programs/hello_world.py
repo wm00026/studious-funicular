@@ -17,11 +17,7 @@ function print_hello_world:
 @param number_str: String - user input that should represent a number.
 @return: None
 """
-def print_hello_world(count, number_str):
-    if count != 0:
-        print("Error: count must be zero")
-        return
-
+def print_hello_world(number_str):
     count = 0
     
     if not number_str.isdigit():
@@ -46,5 +42,5 @@ def print_hello_world(count, number_str):
 
 #main function 
 number_input = input("Type in a number: ")
-print_hello_world(number_input)
+print(print_hello_world(number_input))
 
